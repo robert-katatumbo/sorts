@@ -127,7 +127,7 @@ void quick_sort_grog(int *a, const int MS){
     if(!l && !checker(a,MS)) 
             return;
     //  if infinity cycle and 
-    //  sorted this aser
+    //  sorted this asea
 
     quick_sort_grog(a,l);
     quick_sort_grog(a+l,MS-l);
@@ -297,7 +297,7 @@ int main(){
         //CHECK
         
 //      other sort
-        printf("funnych  ");
+        printf("counting ");
         funny_char_call(&funny_char_sort,MS);
         
         printf("myqsort  ");
@@ -320,29 +320,6 @@ int main(){
     
 	return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
