@@ -187,14 +187,13 @@ void merge_call(int *a, const int size){
 void funny_char_sort(unsigned char* a, const int size, int*helper){
     int i,h;    
     for(i = 0; i<size; ++i){
-        helper[a[i]]++;    
+        ++helper[a[i]];    
     }
     h = 0;
     for(i =0; i<size; ++i){
         while(!helper[h]){
             ++h;
         }
-        //printf("%d\n",h);
         a[i] = h;
         --helper[h];
     }
